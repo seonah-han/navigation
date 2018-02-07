@@ -25,7 +25,7 @@ time, mark, audio, video, button {
 	background-color:inherit;
 	color:inherit;
 	outline:none;
-	border:1px solid black;
+/*	border:1px solid black;*/
 
 
 
@@ -55,7 +55,23 @@ ul,ol,li {
 	display: inline-block;
 }
 /*===========================================*/
+body {
+	background-color: #CCECFF ;
+}
+h1 {
+	display:block;
+	font-size:3rem;
+	font-family: 'Capriola', sans-serif;
+	color:#33B4FF;
+	margin:5%;
+}
+p{
+	font-size:1rem;
+	font-family: 'Capriola', sans-serif;
+	color:#33B4FF;
+	margin:5%;
 
+}
 a {
 	padding-top:2.1rem;
 	position:absolute;
@@ -68,10 +84,17 @@ a {
 	display:block;
 	transform: skew(-54deg) rotate(-72deg);
 	text-align: center;
+	background-color:#99DAFF;
+	color: #00A1FF;
+
 }
 
+a:hover {
+	background-color:#66C7FF;
+	color:white;
+}
 
-#nav-wrapper {
+.nav-wrapper {
 	overflow:hidden;
 	height:20rem;
 	width: 20rem;
@@ -80,8 +103,10 @@ a {
 	left: 50%;
 	border-radius: 50%;
 	margin-left:-10rem;
+
 	
 }
+
 
 #nav-button{
 	cursor:pointer;
@@ -92,20 +117,35 @@ a {
 	height:6rem;
 	border-radius:50%;
 	margin-left:-3rem;
-	padding-bottom:1.7rem;
-	background-color:lightblue;
+	padding-bottom:2.6rem;
+	background-color:#33B4FF;
+	font-size:2rem;
+	color:white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+#nav-button span{
+	border-radius:50%;
+	display:block;
+	background-color:transparent;
 }
-
 ul li{
+	background-color:transparent;
 	overflow:hidden;
 	position:absolute;
 	bottom:50%;
 	right:50%;
 	height:15rem;
 	width:15rem;
-	background-color:pink;
+	border:0.2rem solid transparent;
 	transform-origin:100% 100%;
+	
 }
+ul li:first-child{
+	border-bottom:0;
+}
+ul li:last-child {
+	border-right:0;
+}
+
 ul li:nth-child(1){
 	transform: rotate(0deg) skew(54deg);
 }
@@ -121,7 +161,6 @@ ul li:nth-child(4){
 ul li:nth-child(5){
  	transform: rotate(144deg) skew(54deg);
 }
-
 
 
 
